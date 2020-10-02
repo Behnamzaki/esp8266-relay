@@ -108,6 +108,14 @@ void setup()
       save_e(storedData.sMpass,150);
       save_e(storedData.sDevIP,200);
       save_e(storedData.sRelayState,230); 
+      
+      
+      delay(2000);
+      digitalWrite(relayPin,0);
+      digitalWrite(relayPin,1);
+      delay(1000);
+      digitalWrite(relayPin,0);
+      
       delay(6000);
     }
 
